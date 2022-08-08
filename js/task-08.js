@@ -2,6 +2,7 @@ const form = document.querySelector('.login-form');
 
 const handleSubmit = event => {
   event.preventDefault();
+
   const {
     elements: { email, password },
   } = event.currentTarget;
@@ -10,7 +11,7 @@ const handleSubmit = event => {
     return alert('All fields must be filled!');
   }
 
-  const userDetails = { Email: email.value, Password: password.value };
+  const userDetails = { email: email.value, password: password.value };
 
   console.log(userDetails);
 
